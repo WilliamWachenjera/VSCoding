@@ -1,0 +1,3 @@
+Im writing to let you know, 
+ The file is open, 
+So, you can start writing to it 
