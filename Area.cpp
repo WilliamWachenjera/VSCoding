@@ -1,17 +1,18 @@
-#include <iostream>
-  using namespace std;
-  
-  int main()
-  {
-  // Step 1: Read in radius
-  double radius;
-  double area;
-  cout << "Enter a radius: ";
-  cin >> radius;
-  area = radius * radius * 3.14;
-  cout << "area: ";
-  cout << area << endl;
-  cout << & area;
+#include "Area.h"
+#include "Triangle.h"
+#include "Circle.h"
+#include "Square.h"
+#include <cmath>
 
-  return 0;
-  }
+// Rest of the code remains the same...
+double Area::calculateTriangleArea(const Triangle& triangle) {
+    return 0.5 * triangle.getBase() * triangle.getHeight();
+}
+
+double Area::calculateCircleArea(const Circle& circle) {
+    return M_PI * pow(circle.getRadius(), 2);
+}
+
+double Area::calculateSquareArea(const Square& square) {
+    return pow(square.getSideLength(), 2);
+}

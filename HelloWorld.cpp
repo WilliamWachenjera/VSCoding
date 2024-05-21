@@ -1,12 +1,13 @@
 #include <iostream>
-#include <vector>
-#include <string>
-
 using namespace std;
+
 int main(){
-    vector<string> msg{"Hello", "C++", "from", "VSCode", "and the C++ extension"};
-    for(const string & word : msg){
-        cout << word << " ";
-    }
-    cout << endl;
+cout << "Hello_World" << endl;
+int counti = 0;
+int sum[3] = {1, 2, 3};
+for(int i; i < 3; i++){
+        counti = counti + sum[i];
+    cout << "sum: " << i << endl;
+    cout <<"counti: " <<counti << endl;
+}
 }
